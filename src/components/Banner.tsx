@@ -1,13 +1,16 @@
 const Banner: React.FC = () => {
     return (
-      <div className="relative banner overflow-hidden">
-        <img
-          src="/path/to/image.jpg"
-          alt="Banner"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <h1 className="text-4xl font-bold text-white">Returns made simple.</h1>
+      <div className="banner">
+        {/* Background image */}
+        <img src="/path/to/image.jpg" alt="Banner" />
+        
+        {/* Content */}
+        <div className="content">
+          <h1>Start Saving with Ezshipit</h1>
+          <p>
+            Ezshipit is simple to set up and use daily. Join us to compare transparent, fully landed 
+            shipping costs with no hidden fees or charges. Save instantly with exclusive discounted rates.
+          </p>
         </div>
       </div>
     );

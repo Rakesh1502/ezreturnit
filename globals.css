@@ -33,7 +33,7 @@ body {
    NAVBAR STYLES
 ================================ */
 .navbar {
-  background-color: #ffffff;
+  background-color: #f0eded;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -67,14 +67,27 @@ body {
    HERO SECTION STYLES
 ================================ */
 .hero {
-  background: linear-gradient(90deg, #f0f4ff, #eaf8f0);
+  background: linear-gradient(90deg, #ffffff, #ffffff);
   text-align: center;
   padding: 5rem 2rem;
+  
 }
+
+/* globals.css */
+
+/* Hero section gradient */
+.hero-section {
+  background: linear-gradient(to bottom, #99d0df, #b9d7e0);
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  height: 440px;
+}
+
 
 .hero h1 {
   color: #2d3748;
   font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -104,9 +117,9 @@ body {
 /* ================================
    BANNER STYLES
 ================================ */
-.banner {
+/* .banner {
   position: relative;
-  height: 550px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +147,52 @@ body {
   z-index: 10;
   text-align: center;
   margin: 0 1rem;
+} */
+
+/* globals.css */
+
+/* Banner section styles */
+.banner {
+  position: relative;
+  background: linear-gradient(to bottom, #e4e0de, rgb(247, 244, 244));
+  padding: 4rem 0; /* Adjust padding as necessary */
+  overflow: hidden;
 }
+
+.banner img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5; /* Makes the background image subtle */
+}
+
+.banner .content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1.5rem; /* Adds horizontal padding for smaller screens */
+}
+
+.banner .content h1 {
+  font-size: 2.25rem; /* Tailwind's text-4xl equivalent */
+  font-weight: 700;
+  color: #1f2937; /* Tailwind's gray-900 equivalent */
+  margin-bottom: 1rem;
+}
+
+.banner .content p {
+  color: #374151; /* Tailwind's gray-700 equivalent */
+  font-size: 1.125rem; /* Tailwind's text-lg equivalent */
+  line-height: 1.75rem; /* Tailwind's leading-relaxed equivalent */
+  max-width: 48rem; /* Tailwind's max-w-3xl equivalent */
+}
+
 
 /* ================================
    FEATURE SECTION STYLES
@@ -175,7 +233,7 @@ body {
    FOOTER STYLES
 ================================ */
 .footer {
-  background-color: #f7fafc;
+  background-color: #7793a7;
   padding: 4rem 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

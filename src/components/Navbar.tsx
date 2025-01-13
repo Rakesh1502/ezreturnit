@@ -3,26 +3,41 @@ import Link from "next/link";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-gray-800">ezreturnit</Link>
-        <ul className="flex space-x-6 text-gray-600 font-medium">
-          <li>
-            <Link href="/pricing" className="hover:text-green-600">Pricing</Link>
-          </li>
-          <li>
-            <Link href="/calculator" className="hover:text-green-600">Shipping Calculator</Link>
-          </li>
-          <li>
-            <Link href="/about" className="hover:text-green-600">About Us</Link>
-          </li>
-          <li>
-            <Link href="/contact" className="hover:text-green-600">Contact Us</Link>
-          </li>
-          <li>
-            <Link href="/signin" className="hover:text-green-600">Sign In</Link>
-          </li>
-        </ul>
+    <nav className="bg-white shadow-md">
+      <div className="container mx-auto px-4 flex justify-between items-center py-4">
+        {/* Logo Section */}
+        <div className="text-2xl font-bold text-gray-800">
+          ezreturnit
+        </div>
+
+        {/* Links Section */}
+        <div className="hidden md:flex space-x-6">
+          <a href="#" className="text-gray-800 hover:text-blue-600 transition">
+            Pricing
+          </a>
+          <a href="#" className="text-gray-800 hover:text-blue-600 transition">
+            Shipping Calculator
+          </a>
+          <a href="#" className="text-gray-800 hover:text-blue-600 transition">
+            About Us
+          </a>
+          <a href="#" className="text-gray-800 hover:text-blue-600 transition">
+            Contact Us
+          </a>
+          <a href="#" className="text-gray-800 hover:text-blue-600 transition">
+            Sign In
+          </a>
+        </div>
+
+        {/* Button Section */}
+        <div className="flex items-center space-x-4 mt-2 mb-2">
+          <a
+            href="#"
+            className="hidden md:inline-block px-6 py-2 bg-blue-600 text-white text-sm font-bold rounded-lg shadow hover:bg-blue-700 transition"
+          >
+            START FREE
+          </a>
+        </div>
       </div>
     </nav>
   );
