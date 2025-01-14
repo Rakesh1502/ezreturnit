@@ -12,12 +12,12 @@ const HeroSection: React.FC = () => {
         </div>
 
         {/* Main Heading */}
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">
           How the World’s Top eCommerce Brands Save on Shipping
         </h1>
 
         {/* Description */}
-        <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+        <p className="text-base text-gray-700 mb-6 leading-relaxed">
           Ezshipit combines the global scale of 550+ courier services, with the buying power of our community of
           <span className="font-semibold"> 100,000+ eCommerce sellers</span>—delivering exclusive volume discounts for everyone.
         </p>
@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
           </div>
           <div className="flex items-center space-x-1">
             <span className="text-green-500 font-bold">✓</span>
-            <span>Save up to 91% on shipping labels</span>
+            <span>Save up to 50% on shipping labels</span>
           </div>
           <div className="flex items-center space-x-1">
             <span className="text-green-500 font-bold">✓</span>

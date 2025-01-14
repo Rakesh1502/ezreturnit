@@ -12,27 +12,27 @@ const Navbar: React.FC = () => {
 
         {/* Links Section */}
         <div className="hidden md:flex space-x-6">
-          <a href="#" className="text-gray-800 hover:text-blue-600 transition">
+          <Link href="/pricing" className="text-gray-800 hover:text-blue-600 transition">
             Pricing
-          </a>
-          <a href="#" className="text-gray-800 hover:text-blue-600 transition">
+          </Link>
+          <Link href="/shipping-calculator" className="text-gray-800 hover:text-blue-600 transition">
             Shipping Calculator
-          </a>
-          <a href="#" className="text-gray-800 hover:text-blue-600 transition">
+          </Link>
+          <Link href="/about-us" className="text-gray-800 hover:text-blue-600 transition">
             About Us
-          </a>
-          <a href="#" className="text-gray-800 hover:text-blue-600 transition">
+          </Link>
+          <Link href="/contact-us" className="text-gray-800 hover:text-blue-600 transition">
             Contact Us
-          </a>
-          <a href="#" className="text-gray-800 hover:text-blue-600 transition">
+          </Link>
+          <Link href="/signin" className="text-gray-800 hover:text-blue-600 transition">
             Sign In
-          </a>
+          </Link>
         </div>
 
         {/* Button Section */}
         <div className="flex items-center space-x-4 mt-2 mb-2">
           <a
-            href="#"
+            href="/signup"
             className="hidden md:inline-block px-6 py-2 bg-blue-600 text-white text-sm font-bold rounded-lg shadow hover:bg-blue-700 transition"
           >
             START FREE
